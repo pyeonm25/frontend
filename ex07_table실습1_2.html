@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table실습1-2</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table border="1">
+    <caption>최근에 본 영화들</caption>
+    <tr>
+      <th>영화제목</th>
+      <th>연도</th>
+      <th>감독</th>
+      <th>평가</th>
+    </tr>
+    <tr>
+      <td>라이브오브파이</td>
+      <td>2013</td>
+      <td>이안</td>
+      <td>8.68</td>
+    </tr>
+    <tr>
+      <td>레미제라블</td>
+      <td>2012</td>
+      <td>톰후퍼</td>
+      <td>8.28</td>
+    </tr>
+    <tr>
+      <td>장고:분노의 추격자</td>
+      <td>2012</td>
+      <td>타란티노</td>
+      <td>8.29</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- table>(tr>td*6)*5 -->
+  <table border="1">
+    <tr>
+      <th colspan="6"> 평생교육원 강좌 소개 2020년 학기</th>
+    </tr>
+    <tr>
+      <td rowspan="4"> 어린이강좌</td>
+      <td>강좌 이름</td>
+      <td>강의자</td>
+      <td>소개</td>
+      <td>강좌 코드</td>
+      <td>실습비</td>
+    </tr>
+    <tr>
+      <td>아빠와 함께하는 코딩놀이</td>
+      <td>5windy</td>
+      <td>논리수학 및 프로그래밍 기초개념을 놀이를 통해 학습한다</td>
+      <td>kd001</td>
+      <td>80000원</td>
+    </tr>
+    <tr>
+      <td>펭수랑 부르는 요들송</td>
+      <td>giantPengTV</td>
+      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corporis neque quisquam libero nulla rerum
+        quasi temporibus minima modi ipsa! Perferendis recusandae, fugit ratione a fuga tenetur voluptatibus odio amet?
+      </td>
+      <td>kd0013</td>
+      <td>60000원</td>
+    </tr>
+    <tr>
+      <td>뎃생과 유화</td>
+      <td>김충재</td>
+      <td> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolores aspernatur aliquid quaerat quisquam
+        omnis nulla facere id hic asperiores vel, quidem nisi voluptatibus ducimus tempora aliquam? Possimus, dolore
+        sequi!
+        Voluptates error blanditiis deserunt ad ex maiores, eveniet officia enim iste. Quibusdam, similique, nobis ea
+        ipsa iusto magni eligendi qui placeat veniam, quos sint fugit deleniti. Cum nisi aspernatur iusto. </td>
+      <td>kd007</td>
+      <td>15000원</td>
+    </tr>
+  </table>
+</body>
+
+</html>
