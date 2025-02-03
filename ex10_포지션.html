@@ -44,7 +44,14 @@
       line-height: 50px;
       background-color: orange;
       top: 0px;
-      left: 100px;
+      z-index: 2;
+      /* left: 100px; */
+    }
+
+    .box2 {
+      position: relative;
+      background-color: red;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -53,7 +60,7 @@
   <div class="container">
     <div></div>
     <div class="box"> 박스 </div>
-    <div></div>
+    <div class="box2"></div>
     <div></div>
     <div></div>
     <div></div>
