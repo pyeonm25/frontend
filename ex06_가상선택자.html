@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상선택자</title>
+  <style>
+    p::before,
+    p::after {
+      content: "|";
+      color: blue;
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      padding: 10px;
+      background-color: lightgrey;
+    }
+
+    p {
+      margin: 5px 5px 5px 5px;
+      color: red;
+      font-weight: 600;
+    }
+
+    h1#test1 {
+      color: blueviolet;
+    }
+
+    h1#test1:hover {
+      color: green;
+    }
+
+    h1#test1:active {
+      color: blue;
+    }
+
+    input[type="text"]:focus {
+      background-color: lightgreen;
+
+    }
+
+    p {
+      color: brown !important;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="color:pink;">Lorem ipsum </p>
+
+  <h1 id="test1"> test1</h1>
+
+  <input type="text" />
+</body>
+
+</html>
