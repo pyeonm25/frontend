@@ -6,13 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>트렌지션 실습2</title>
   <style>
+    div {
+      background-color: royalblue;
+      width: 200px;
+      color: white;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 3px;
+      /* transition-duration: 0.5s; */
+      /* transition: 0.5s; */
+      transition: all 0.5s ease 0s;
 
+    }
+
+    div:hover {
+      width: calc(200px * 2);
+      opacity: 0.5;
+    }
   </style>
 </head>
 
 <body>
   <div>
-    <p>마우스를 올리면 길어져요</p>
+    <p>마우스를 대면 길어져요</p>
   </div>
 
 </body>
