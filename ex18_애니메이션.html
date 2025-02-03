@@ -10,11 +10,49 @@
   <style>
     /* Fontawesome 4.7 */
     @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    .container {
+      width: 400px;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .heart {
+      font-size: 40px;
+      color: red;
+      margin-top: 10px;
+      animation: bouns 1s ease-in-out infinite;
+    }
+
+    @keyframes bouns {
+      0% {
+        transform: scale(1.2);
+      }
+
+      60% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        transform: scale(1.2);
+      }
+    }
   </style>
 </head>
 
 <body>
-  <span class="fa-solid fa-heart"></span>
+  <div class="container">
+    <div class="title">애니메이션 예시 1</div>
+    <span class="heart fa-solid fa-heart"></span>
+    <hr>
+    <div class="title">애니메이션 예시 2</div>
+    <span class="fa-solid fa-star"></span>
+    <hr>
+    <div class="title">애니메이션 예시 3</div>
+    <span class="fa-solid fa-rotate-right"></span>
+  </div>
+
 </body>
 
 </html>
