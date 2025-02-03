@@ -25,7 +25,51 @@
       animation: bouns 1s ease-in-out infinite;
     }
 
+    .star {
+      font-size: 40px;
+      color: rgb(255, 241, 47);
+      margin-top: 10px;
+      animation: movingStar 1s ease-in-out infinite;
+    }
+
+    .arrow {
+      font-size: 40px;
+      margin-top: 10px;
+      animation: lotation 1s ease-in-out infinite;
+    }
+
+    @keyframes movingStar {
+      0% {
+        transform: scaleX(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scaleX(0);
+      }
+    }
+
+    @keyframes lotation {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     @keyframes bouns {
+
+      /* from{
+        transform: scale(1.2);
+      }
+      to{
+        transform: scale(0.9);
+      } */
       0% {
         transform: scale(1.2);
       }
@@ -47,12 +91,11 @@
     <span class="heart fa-solid fa-heart"></span>
     <hr>
     <div class="title">애니메이션 예시 2</div>
-    <span class="fa-solid fa-star"></span>
+    <span class="star fa-solid fa-star"></span>
     <hr>
     <div class="title">애니메이션 예시 3</div>
-    <span class="fa-solid fa-rotate-right"></span>
+    <span class="arrow fa-solid fa-rotate-right"></span>
   </div>
-
 </body>
 
 </html>
