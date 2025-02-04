@@ -38,8 +38,10 @@
       flex: 1;
     }
 
+
+
     /* 
-      viewWidth 1~768px 즉 맥스가 769 미만  
+    viewWidth 1~768px 즉 맥스가 769 미만  
     */
     @media(max-width:768px) {
       * {
@@ -54,6 +56,18 @@
       }
 
     }
+
+    /* 디바이스가 가로사이즈 576 이하  => 스마트폰 세로모드 */
+    @media (min-width: 576px) {}
+
+    /* 디바이스가 가로사이즈 768 이하  => 스마트폰 가로모드 */
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    /* 디바이스가 가로사이즈 992 이하  => 타블렛 */
+    @media (min-width: 992px) and (max-width: 1999px) {}
+
+    /* 디바이스가 가로사이즈 1200px 이하  => pc, 노트북 모드*/
+    @media (min-width: 1200px) {}
   </style>
 </head>
 
