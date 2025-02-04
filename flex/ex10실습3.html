@@ -11,29 +11,59 @@
       height: 100vh;
     }
 
-    .container {}
+    .container {
+      height: 100%;
+      background-color: gray;
+    }
 
     header {
       background-color: tomato;
+      height: 10%;
     }
 
-    section {}
+    /* header,
+    aside.left,
+    aside.right,
+    main,
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section {
+      height: 80%;
+      display: flex;
+    }
+
 
     aside.left {
       background-color: yellow;
+      flex: 1;
     }
 
     main {
       background-color: lightblue;
+      flex: 4;
     }
 
-    main>p {}
+    main>p {
+      margin: 15px;
+    }
 
     aside.right {
+      flex: 1;
       background-color: yellowgreen;
     }
 
     footer {
+      height: 10%;
       background-color: aqua;
     }
   </style>
@@ -41,17 +71,18 @@
 
 <body>
   <div class="container">
-    <header>header</header>
+    <header class="text">header</header>
     <section>
-      <aside class="left">left</aside>
-      <main>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatem mollitia aperiam? Voluptates
+      <aside class="left text">left</aside>
+      <main class="text">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatem mollitia aperiam?
+          Voluptates
           minus fuga accusamus ipsam laudantium, soluta voluptas, libero, ratione deserunt est delectus dolores
           praesentium itaque ad similique.</p>
       </main>
-      <aside class="right">right</aside>
+      <aside class="right text">right</aside>
     </section>
-    <footer>footer</footer>
+    <footer class="text">footer</footer>
   </div>
 </body>
 
