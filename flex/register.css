@@ -26,10 +26,12 @@ body{
 
 
 }
+/* 브라우저 화면 컨텐츠 width : 고정 px  */
+/* 모바일 화면 width 고정 -> 상대적 100% */
 .login-form{
   border: 1px solid black;
-  height: 600px;
-  width: 80%;
+  height: 50%;
+  width: 600px;
 }
 .login-form>h2{}
 .sns-login{}
