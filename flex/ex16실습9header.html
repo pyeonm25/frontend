@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex17실습header</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    header {
+      /* border: 1px solid red; */
+      background-color: #fff;
+      display: flex;
+      padding: 20px;
+    }
+
+    header>.logo {
+      flex: 1;
+      height: 100px;
+      margin: auto;
+      /* text-align: center; */
+    }
+
+    .logo>img {
+      /* width: 100%;
+      height: 100%; */
+      object-fit: contain;
+      width: 200px;
+      height: 100px;
+    }
+
+    .gnb {
+      flex: 6;
+      /* 요소를 중앙 정렬 1번째 방법 */
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+
+      /* 요소를 중앙 정렬 2번째 방법 */
+      text-align: center;
+      margin: auto;
+    }
+
+    .gnb>a {
+      margin-right: 15px;
+    }
+
+    .search {
+      flex: 1;
+      text-align: center;
+      margin: auto;
+    }
+
+    .search>input {}
+
+    @media(max-width:768px) {
+      header {
+        flex-direction: column;
+      }
+
+      /* .gnb {
+        margin-bottom: 15px;
+      } */
+      .search {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="./images/logo.png" alt="로고"></div>
+    <div class="gnb">
+      <a href="#">home</a>
+      <a href="#">about us</a>
+      <a href="#">service</a>
+      <a href="#">contact us</a>
+      <a href="#">blog</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="search"></input>
+    </div>
+  </header>
+
+</body>
+
+</html>
