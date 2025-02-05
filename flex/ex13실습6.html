@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습6</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    .container {
+      height: 100%;
+      font-size: 2em;
+      display: flex;
+    }
+
+    nav,
+    header,
+    article,
+    aside,
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      background-color: pink;
+      width: 100px;
+    }
+
+    section {
+      flex: 1;
+      /* height: 100%; */
+      display: flex;
+      flex-direction: column;
+    }
+
+    section>header {
+      background-color: palevioletred;
+      height: 100px;
+    }
+
+    section>main {
+      /* flex: 1; */
+      height: calc(100% - 200px);
+      display: flex;
+    }
+
+    main>article {
+      background-color: beige;
+      flex: 1;
+    }
+
+    main>aside {
+      background-color: lightgray;
+      width: 80px;
+    }
+
+    section>footer {
+      background-color: palevioletred;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>nav</nav>
+    <section>
+      <header>header</header>
+      <main>
+        <article>article</article>
+        <aside>aside</aside>
+      </main>
+      <footer>footer</footer>
+    </section>
+  </div>
+
+</body>
+
+</html>

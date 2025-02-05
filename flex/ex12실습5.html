@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습5</title>
+  <style>
+    /* resetCSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    .container {
+      height: 100%;
+    }
+
+    header,
+    .banner,
+    nav,
+    article {
+      padding: 30px;
+      text-transform: capitalize;
+    }
+
+    header {
+      background-color: yellow;
+    }
+
+    .banner {
+      background-color: yellowgreen;
+    }
+
+    section {
+      display: flex;
+    }
+
+    section>nav {
+      background-color: palevioletred;
+      width: 150px;
+    }
+
+    section>article {
+      background-color: skyblue;
+      flex: 1;
+    }
+
+    article>h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>header</h2>
+    </header>
+    <div class="banner">
+      <h2>banner</h2>
+    </div>
+    <section>
+      <nav>
+        <h2>navi</h2>
+      </nav>
+      <article>
+        <h2>main</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora laboriosam commodi, accusamus
+          doloribus necessitatibus libero nihil ex delectus dignissimos provident sunt in inventore impedit perferendis
+          incidunt officia officiis repellat?
+          Laborum veniam sunt officia, deleniti sit doloremque? Laborum libero quisquam saepe maxime facilis?
+          Repudiandae odio magni quisquam amet nobis numquam accusamus laboriosam dignissimos. Dolore placeat dicta
+          sint. Explicabo, voluptates nam.
+          Accusantium consequuntur repellendus temporibus natus voluptates excepturi tempore labore optio tenetur
+          molestiae neque recusandae sequi modi magni expedita quidem, enim vel! Illum ullam fugiat veritatis ducimus
+          possimus itaque, nemo modi!
+          Officiis tenetur accusantium facilis officia molestias id iste, natus laudantium sunt voluptates et adipisci
+          deleniti consequatur itaque aliquam veniam, minus, voluptatibus quasi tempore velit! Vitae ipsum perspiciatis
+          quis similique molestias.
+          Quibusdam id architecto dolorem deserunt accusamus dignissimos. Aliquam possimus assumenda numquam, expedita,
+          accusantium earum sequi omnis in ipsa voluptates dolores quaerat molestias ut culpa amet qui eligendi
+          explicabo? Officia, aspernatur.
+          Harum iusto sunt placeat quo enim porro sequi exercitationem a eum nihil. Quas saepe ipsam, eos dolorum
+          voluptatibus hic rem consequuntur itaque architecto? Iusto obcaecati odio doloremque. Ratione, ea aperiam?
+          neque. Corrupti quae praesentium officiis similique dicta id
+          laudantium excepturi provident accusantium!</p>
+      </article>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
