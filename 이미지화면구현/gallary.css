@@ -26,11 +26,10 @@ section{
 /* header */
 nav{
   height: auto;
-  /* border: 1px solid red; */
   padding: 10px;
 }
 nav .gnb{
-  padding: 0px 30px 20px 30px;
+  padding: 30px;
   text-align: right;
 }
 .gnb a{
