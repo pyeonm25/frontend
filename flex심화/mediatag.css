@@ -12,6 +12,10 @@ button{ cursor: pointer; outline: none; border: none;}
 body{
   height: 100vh;
 }
+.media{
+  border: 1px solid black;
+  margin: 10px;
+}
 
 /* 모바일환경 */
 @media screen and (max-width: 767px){
