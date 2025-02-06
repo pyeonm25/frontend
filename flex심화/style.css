@@ -13,3 +13,28 @@ button{ cursor: pointer; outline: none; border: none;}
 body{
   height: 100vh;
 }
+header{
+  height: 60px;
+  background-color: #6c5ce7;
+}
+nav{
+  width: 1280px;
+}
+.logo{}
+.logo img{
+  width: 100px;
+  margin: 10px;
+  filter: invert();
+}
+.gnb{}
+.gnb a{}
+.sns{}
+.sns i{}
+
+a:hover{
+  color: red;
+}
+
+
+/* 모바일환경 */
+@media screen and (max-width: 767px){}
