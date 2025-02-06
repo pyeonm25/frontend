@@ -25,9 +25,9 @@ button,input,textarea,select{
   font-family: 'Noto Sans KR' , sans-serif;
 }
 /* 
-인라인요소 - width hight 크기값 사용불가 마진불가
-인라인블럭 요소- width hight 크기값 사용가능 , 마진 auto불가 : 컨텐츠 영역 블럭으로 차지 
-블럭요소 - 한줄 다 차지 마진 auto 
+인라인요소 - width hight 크기값 사용불가 마진 상하만 존재 : 
+인라인블럭 요소- width hight 크기값 사용가능 , 마진 auto 불가 마진 좌우가 존재하지 않기때문에 : 컨텐츠 영역 블럭으로 차지 
+블럭요소 - 한줄 다 차지 마진 auto : 좌우 마진을 중심으로 자동 중앙 정렬 해줌 
 */
 
 section{
