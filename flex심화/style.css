@@ -16,23 +16,43 @@ body{
 header{
   height: 60px;
   background-color: #6c5ce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 nav{
   width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo{}
+.logo{
+  /* border: 1px solid red; */
+}
 .logo img{
   width: 100px;
   margin: 10px;
   filter: invert();
 }
-.gnb{}
-.gnb a{}
-.sns{}
-.sns i{}
+.gnb{
+  display: flex;
+  /* border: 1px solid red; */
+}
+.gnb a{
+  color: #fff;
+  margin: 10px;
+}
+.sns{
+  /* border: 1px solid red; */
+}
+.sns i{
+  color: #fff;
+  padding: 8px;
+}
 
-a:hover{
-  color: red;
+a:hover, i:hover{
+  color: bisque;
 }
 
 
