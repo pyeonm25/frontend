@@ -24,3 +24,23 @@ section{
   width: 1280px;
   margin: auto;
 }
+.list-header{}
+.list-header h1{}
+.list-header p{}
+
+.items{}
+.item{}
+.item img{}
+.item h4{}
+.item span{}
+.item p{}
+.item p .fa{}
+.item p em{}
+.item .price{}
+.item .badge{}
+.item .badge.best{}
+.item .badge.only{}
+
+@media (max-width:768px){
+  
+}
