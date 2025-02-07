@@ -96,7 +96,7 @@ nav .gnb{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.items .item{
+.item{
   width: 310px;
   height: 200px;
   overflow: hidden;
@@ -105,6 +105,16 @@ nav .gnb{
 .item img{
   width: 100%;
 }
+
+/* description */
+.desc{}
+.desc h6{}
+.desc .like{}
+.like span{}
+i.fa-heart{
+  color: crimson;
+}
+
 
 /* 테블릿 환경 */
 @media screen and (min-width:768px) and (max-width: 1024px){
