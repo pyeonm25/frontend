@@ -21,7 +21,6 @@ body{
 
 section{
   height: 100%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,13 +29,85 @@ section{
 .card{
   height: 400px;
   width: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+
 }
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgb(0,0,0,0.5);
+}
+.card:hover .content{
+  top:0;
+}
+
 .card img{
   width: 100%;
+  height: 100%;
 }
-.content{}
-.content h2{}
-.content h2 span{}
+
+.card:nth-child(1) .content{
+  background: linear-gradient( to top,crimson, transparent);
+}
+
+.card:nth-child(2) .content{
+  background: linear-gradient( to top,dodgerblue, transparent);
+}
+
+.card:nth-child(3) .content{
+  background: linear-gradient( to top,yellowgreen, transparent);
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  padding-top: 150px;
+
+  transition: 0.5s;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+
+}
+.content h2{
+  font-size: 30px;
+}
+.content h2 span{
+  /* border: 1px solid black; */
+  font-size: 14px;
+  color: gold;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
 
 .sns{}
-.sns a{}
+/* 인라인 - width, height 못가짐 */
+/* 블럭 - 한줄 다 차지 마진 상 하 좌 우 값 가짐  */
+/* 인라인블럭 : 컨테츠 영역 차지 + width, height 값 상 하 마진 값 가짐 , 좌우 마진 x   */
+.sns a{
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 13px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  
+
+}
+.sns a:hover{
+  color: gold;
+  border-color: gold;
+}
