@@ -23,6 +23,7 @@ body{
 section{
   width: 1280px;
   margin: auto;
+  height: 600px;
 }
 .list-header{}
 .list-header h1{
@@ -37,25 +38,76 @@ section{
 .list-header p{}
 
 .items{
+  /* border: 1px solid blue; */
   height: 300px;
+  display: flex;
 }
-.item{}
+.item{
+  flex: 1;
+  margin-right: 10px;
+}
+.item:last-child{
+  margin-right: 0;
+}
 .item img{
   width: 100%;
   height: 80%;
 }
-.item h4{}
-.item span{}
+.item h4{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.item .category{
+  font-weight: bold;
+  color: royalblue;
+
+}
 .item p{}
-.item p .fa{}
-.item p em{}
-.item .price{}
+.item p .fa{
+  color: gold;
+}
+.item p em{
+  font-size: 15px;
+}
+.item .price{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .item .badge{
   font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
-.item .badge.best{}
-.item .badge.only{}
+.item .badge.best{
+  background-color: plum;
+
+}
+.item .badge.only{
+  background-color: lightgreen;
+}
 
 @media (max-width:768px){
+  section{
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+  }
+  .list-header{
+    text-align: center;
+  }
+  .list-header h1::after{
+    content:"\f103";
+  }
+  .items{
+    flex-direction: column;
+  }
+  .item{
+    margin: 0;
+  }
+  .item:nth-child(3){
+    order: -1;
+  }
+
 
 }
