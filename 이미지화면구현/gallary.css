@@ -101,16 +101,39 @@ nav .gnb{
   height: 200px;
   overflow: hidden;
   margin-bottom: 10px;
+  position:relative;
 }
 .item img{
   width: 100%;
 }
 
 /* description */
-.desc{}
-.desc h6{}
-.desc .like{}
-.like span{}
+.desc{
+  background-color: rgba(0,0,0,0.3);
+  height: 60px;
+  width: 100%;
+  color: #fff ;
+  padding: 10px;
+  position: absolute;
+  transition: 0.5s;
+  bottom: -60px;
+}
+
+.item:hover .desc{
+  bottom: 0;
+}
+
+.desc h6{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.desc .like{
+  display: flex;
+  justify-content: space-between;
+}
+.like span{
+  font-size: 13px;
+}
 i.fa-heart{
   color: crimson;
 }
