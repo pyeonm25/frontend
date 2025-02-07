@@ -18,3 +18,25 @@ body{
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+
+section{
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.card{
+  height: 400px;
+  width: 300px;
+}
+.card img{
+  width: 100%;
+}
+.content{}
+.content h2{}
+.content h2 span{}
+
+.sns{}
+.sns a{}
