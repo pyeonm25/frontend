@@ -122,6 +122,7 @@ nav .gnb{
 
 .item:hover .desc{
   bottom: 0;
+  /* transform: translateY( -175%); */
 }
 
 .desc h6{
