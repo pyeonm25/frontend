@@ -13,13 +13,13 @@
 <body>
   <button class="btn-open"> 뉴스레터 구독하기</button>
   <!--class="modal" 화면 위치값만 조절하는 div 태그 -->
-  <div class="modal">
+  <div class="modal active">
     <div class="modal-content">
       <div class="photo"></div>
       <div class="desc">
         <div class="desc-header">
           <h2> 지금 다양한 해택을 받아보세요</h2>
-          <button class="btn-close">X </button>
+          <button class="btn-close">&#10005;</button>
         </div>
         <div class="desc-content">
           <input type="email" placeholder="이메일 주소를 입력하세요">
@@ -33,7 +33,22 @@
       </div>
     </div>
   </div>
-
+  <!-- 모달창 화면 백그라운색을 입히는 태그 -->
+  <div class="overlay"></div>
 </body>
 
 </html>
+
+<script>
+  $('.btn-open').click(
+    function () {
+      $('.modal , .overlay').addClass('active')
+    }
+  );
+  $('.btn-close').click(
+    function () {
+      $('.modal , .overlay').removeClass('active')
+    }
+  );
+
+</script>
