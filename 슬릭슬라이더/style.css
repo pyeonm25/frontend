@@ -16,3 +16,12 @@ body{
   text-align: center;
   line-height: 300px;
 }
+.slick-dots{
+  visibility: hidden;
+}
+.slick-dots li button:before {
+  font-size: 100px;
+}
+.slick-arrow{
+  visibility: hidden;
+}
