@@ -90,18 +90,58 @@ nav .gnb{
 
 /* items */
 .items{
-  border: 1px solid blue;
+  margin-top: 60px;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .items .item{
   width: 310px;
   height: 200px;
-  /* overflow: hidden; */
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 .item img{
   width: 100%;
 }
 
 /* 테블릿 환경 */
-@media screen and (min-width:768px) and (max-width: 1024px){}
+@media screen and (min-width:768px) and (max-width: 1024px){
+  section{
+    width: 100%;
+
+  }
+  .items .item{
+    width: 49%;
+    margin-right: 2px;
+  }
+  .items .item:nth-child(even){
+    /* border: 3px solid red; */
+    margin-right: 0;
+  }
+
+  
+}
 /* 모바일환경 */
-@media screen and (max-width: 767px){}
+@media screen and (max-width: 767px){
+  section{
+    width: 100%;
+
+  }
+  nav .gnb{
+    text-align: center;
+  }
+  .search-box{
+    flex-direction: column;
+  }
+
+  .search-box input{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .items .item{
+    width: 100%;
+    height: auto;
+  }
+}
