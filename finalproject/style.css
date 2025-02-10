@@ -84,6 +84,7 @@ nav .inner{
 /* intro */
 main{
   border: 2px solid blue;
+  height: 70vh;
 }
 main .inner{
   
