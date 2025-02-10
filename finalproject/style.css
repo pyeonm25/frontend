@@ -168,8 +168,56 @@ main .inner{
 .ranking{}
 /* testmonial */
 .testmonial{}
+
+
 /* callaction */
-.callaction{}
+.callaction{
+  height: 450px;
+  background: url(images/callaction-01.jpg) no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+}
+.callaction::before{
+  content: '';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom, rgba(78,0,78,0.4), rgba(104, 104,1,0.4));
+}
+.callaciton-heading{
+  color: #fff;
+  text-align: center;
+  z-index: 100;
+}
+.callaciton-heading h2{
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+.callaciton-heading span{
+  font-weight: 500;
+}
+.callaciton-heading a{
+  color: #fff;
+  background-color: #109e4b;
+  /* width: 100px;
+  height: 300px;
+  display: inline-block; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.callaciton-heading a:hover{
+  background-color: orange;
+}
 /* festival */
 .festival{}
 /* footer */
