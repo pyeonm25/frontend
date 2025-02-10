@@ -33,7 +33,14 @@ body{
   margin: auto;
 }
 /* header */
-header{}
+/* position 값을 주면 inner block => 다시 width 값을 줘야함 */
+header{
+  position: absolute;
+  width: 100%;
+  top:0;
+  left:0;
+  /* z-index: 1000; */
+}
 
 .banner{
   background-color: black;
@@ -72,6 +79,7 @@ nav .inner{
   align-items: center;
 }
 .gnb li a{
+  color: #fff;
   margin: 20px;
 }
 .gnb li a:last-child{
@@ -85,15 +93,30 @@ nav .inner{
 main{
   border: 2px solid blue;
   height: 70vh;
+  background: url(images/intro.jpg) no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .inner{
   
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  color: #fff;
+  text-align: center;
+
 }
 .heading{}
-.heading h1{}
-.heading p{}
-
+.heading h1{
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+.heading p{
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 150px;
+}
 
 
 /* about */
