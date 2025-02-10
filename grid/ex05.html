@@ -4,33 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gird 04</title>
+  <title>grid 실습 5</title>
   <style>
     * {
       margin: 0;
       padding: 0;
     }
 
-    .container {
-      width: 80%;
-      height: 800px;
+    body {
+      height: 100vh;
     }
 
-    ul {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(2, 100px);
-      display: grid;
+    .container {
+      width: 80%;
+      height: 80%;
+    }
+
+    .grid {
       height: 100%;
       border: 2px solid red;
-      /* align-items: center; */
-      /* justify-items: right; */
-
-      /* content 는 부모에 여백이 있고 자식요소가 여러줄 */
-
-      align-content: space-around;
-      justify-content: space-evenly;
-      gap: 10px 10px
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, auto));
+      grid-auto-rows: repeat(2, 100px);
     }
 
     .item {
@@ -49,24 +44,26 @@
       border: 1px solid cadetblue;
     }
 
-    /* 
     li:nth-child(1) {
-      justify-self: end;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
     }
 
     li:nth-child(2) {
-      align-self: end;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      /* background-color: orange !important; */
     }
 
     li:nth-child(3) {
-      align-self: center;
+      grid-column: 1 / span 2;
     }
 
     li:nth-child(4) {
-      align-self: flex-start;
-    } */
-
-    li:nth-child(5) {}
+      grid-row: 1 /span 3;
+    }
   </style>
 </head>
 
