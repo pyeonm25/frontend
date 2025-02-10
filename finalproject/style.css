@@ -125,7 +125,8 @@ main .inner{
 .about-content{
   /* border: 2px solid red; */
   display: flex;
-  padding: 50px;
+  /* 고정 높이 값을 주면 나중에 반응형에서 hight: auto 로 변경 해주는 것이 번거롭기 때문에 간단하게 padding 으로 값주기 */
+  padding: 150px 0 ;
   text-align: center;
 }
 .about-content > div{
