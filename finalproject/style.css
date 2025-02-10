@@ -116,11 +116,53 @@ main .inner{
   font-size: 22px;
   line-height: 1.5em;
   padding: 0 150px;
+  font-weight: 300;
 }
 
 
 /* about */
 .about{}
+.about-content{
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 50px;
+  text-align: center;
+}
+.about-content > div{
+  padding: 30px;
+}
+.desc{
+  /* border: 2px solid green; */
+  flex: 3;
+  padding: 150px 0;
+}
+.desc h2{
+  /* normal : 400 bold : 600 */
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.desc p{
+  font-size: 16px;
+  line-height: 1.7em;
+}
+.desc a{
+  color: rgb(243, 107, 58);
+  font-weight: bold;
+}
+.desc a:hover{
+  text-decoration: underline;
+}
+.photo{
+  /* border: 2px solid blue; */
+  flex: 2;
+  padding-top: 150px;
+}
+.photo img{
+  width: 100%;
+  border-radius: 40% 60% 65% 35% / 35% 45% 55% 60% ;
+}
+
 /* ranking */
 .ranking{}
 /* testmonial */
