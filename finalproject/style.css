@@ -1,0 +1,50 @@
+/* goole web font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* reset CSS */
+*{
+  box-sizing: border-box;
+}
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none; border: none;}
+
+/* body font-fmaily를 상속받지 않는 태그들  */
+button,input,textarea,select{
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat' , sans-serif;
+  line-height: 1.5em;
+}
+
+.container{
+  height: 100%;
+}
+/* common css */
+.inner{
+  border: 2px solid blue;
+  width: 1300px;
+  margin: auto;
+}
+/* header */
+header{}
+/* about */
+.about{}
+/* ranking */
+.ranking{}
+/* testmonial */
+.testmonial{}
+/* callaction */
+.callaction{}
+/* blog */
+.blog{}
+/* festival */
+.festival{}
+/* footer */
+footer{}
