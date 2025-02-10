@@ -28,12 +28,73 @@ body{
 }
 /* common css */
 .inner{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 1300px;
   margin: auto;
 }
 /* header */
 header{}
+
+.banner{
+  background-color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.lnb{
+  /* border: 2px solid red; */
+  width: 1300px;
+  margin: auto;
+  text-align: right;
+}
+.lnb a{
+  color: #ddd;
+  margin: 5px;
+}
+.lnb a:last-child{
+  margin: 0;
+}
+.lnb em{
+  color: #bbbb;
+}
+nav{}
+nav .inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  padding: 10px;
+}
+.gnb{
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+.gnb li a{
+  margin: 20px;
+}
+.gnb li a:last-child{
+  margin-right: 0;
+}
+.gnb li a:hover{
+  color: red;
+}
+
+/* intro */
+main{
+  border: 2px solid blue;
+}
+main .inner{
+  
+  border: 2px solid red;
+}
+.heading{}
+.heading h1{}
+.heading p{}
+
+
+
 /* about */
 .about{}
 /* ranking */
@@ -42,8 +103,6 @@ header{}
 .testmonial{}
 /* callaction */
 .callaction{}
-/* blog */
-.blog{}
 /* festival */
 .festival{}
 /* footer */
