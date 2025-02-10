@@ -219,6 +219,51 @@ main .inner{
   background-color: orange;
 }
 /* festival */
-.festival{}
+.festival{
+  height: 270px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.festival-heading{
+  text-align: center;
+}
+.festival-heading h3{
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.festival-heading span{
+  font-weight: 500;
+}
+.btns{}
+.btns a{
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.btns a:hover{
+  font-size: 20px;
+}
+.btns a:first-child{
+  background-color: orange;
+  color: #fff;
+}
+.btns a:last-child{
+  color:#222;
+  background-color: #ededed;
+}
+
 /* footer */
 footer{}
+.footer-content{}
+.footer-content ul li {}
+.footer-content ul li a{}
+.footer-content ul li a:hover{}
+
+.community{}
+.network{}
+.help{}
+
+
