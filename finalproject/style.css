@@ -226,7 +226,14 @@ main .inner{
   color: #c25a3a;
   font-weight: 500;
 }
-.btn-explore img{}
+.btn-explore img{
+  transition: 0.3s;
+}
+.btn-explore:hover img{
+  margin-left: 15px;
+  /* transform: translateX(15px); */
+}
+
 
 
 /* testmonial */
