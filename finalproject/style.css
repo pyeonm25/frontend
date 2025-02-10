@@ -7,6 +7,9 @@
 *{
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a{ text-decoration: none; color: #222;}
 h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
 button{ cursor: pointer; outline: none; border: none;}
@@ -234,10 +237,55 @@ main .inner{
   /* transform: translateX(15px); */
 }
 
+/* testimonial */
+.testimonial{
+  padding: 100px 0;
+}
+.testimonial-content{
+  text-align: center;
+}
+.testimonial-content h2{
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.testimonial-content hr{
+  border: none;
+  background-color: royalblue;
+  height: 4px;
+  width: 120px;
+  margin: 30px auto;
 
+}
+.myslider{
+  /* border: 2px solid green; */
+}
+.myslider .client{
+  height: 300px;
+  /* border: 2px solid red; */
+}
+.client-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-/* testmonial */
-.testmonial{}
+}
+.client-img img{
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.client-img span{
+  line-height: 1.7em;
+}
+.client-img span b{
+  display: block;
+}
+
+.client-comment{
+  padding: 10px;
+  line-height: 1.7em;
+}
 
 
 /* callaction */
