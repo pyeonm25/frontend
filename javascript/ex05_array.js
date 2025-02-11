@@ -22,5 +22,22 @@ console.log(array);
 array[array.length - 1]();
 
 for (let i = 0; i < array.length; i += 1) {
-
+  console.log(`index ${i} = ${array[i]}`);
+  // console.log("index " + i + " = " + array[i]);
 }
+
+
+console.log("===============");
+console.log(array[-1]);
+array[-1] = "test";
+
+console.log("===============");
+
+for (let i = 0; i < array.length; i += 1) {
+  console.log(`index ${i} = ${array[i]}`);
+  // console.log("index " + i + " = " + array[i]);
+}
+
+// 자바스크립트는 자유도가 높기 때문에
+// 배열 => 음수 안쓴다
+// 배열 => 공통의 자료형만 사용한다 
