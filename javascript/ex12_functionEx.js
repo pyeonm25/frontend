@@ -1,8 +1,11 @@
 function printArray(start, end) {
-  let isValidNums = typeof start == 'number' && typeof end == 'number';
-  if (!isValidNums) {
+  // let isValidNums = typeof start == 'number' && typeof end == 'number';
+  // if (!isValidNums) {
+  //   console.log(" 숫자값을 입력하세요");
+  //   return;
+  // }
+  if (isNaN(start) || isNaN(end)) {
     console.log(" 숫자값을 입력하세요");
-    return;
   }
 
   if (start > end) {
