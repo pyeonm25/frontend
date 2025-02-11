@@ -27,13 +27,16 @@ console.log(fruit);
 console.log(fruit.shift())
 console.log(fruit);
 
-// 배열 자르기 (시작인덱스 , 끝인덱스 -1 )
-console.log(fruit.slice(4));
+// 배열 자르기 (시작인덱스 , 끝인덱스 )
+console.log(fruit.splice(1, 3));
 console.log(fruit);
 
 // 새로운 배열 만드는 함수 
-
+// -6    -5      -4     -3       -2         -1
 fruit = ['바나나', '사과', '포도', "딸기", '샤인머스켓', '사과'];
+
+
+console.log(fruit.slice(-3));
 
 let addFruit = ['망고'];
 let temp1 = addFruit.concat(fruit);
