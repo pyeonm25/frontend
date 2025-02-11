@@ -32,3 +32,11 @@ $('.myslider').slick({
     // instead of a settings object
   ]
 });
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $('.gototop').addClass('active')
+  } else {
+    $('.gototop').removeClass('active')
+  }
+})

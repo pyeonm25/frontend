@@ -411,3 +411,25 @@ footer{
 }
 
 
+.gototop{
+  background-color: skyblue;
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+.gototop.active{
+  bottom: 20px;
+  opacity: 1;
+}
