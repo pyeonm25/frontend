@@ -23,4 +23,5 @@ const cat = {
 console.log(cat);
 console.log(cat.callOwner());
 console.log("--------------------")
-console.log(cat.printInfo());
+const test2 = cat.printInfo.bind(cat)();
+console.log(test2);
