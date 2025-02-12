@@ -26,6 +26,7 @@
       height: 800px;
       width: 500px;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .box {
@@ -78,8 +79,13 @@
   btnAdd.addEventListener("click", addPinkBox);
 
   btnRemove.addEventListener("click", () => {
+    let box = document.querySelector('.box');
+    if (!box) {
+      alert("더이상 삭제할 박스가 없습니다");
+      return;
+    }
+    container.removeChild(box);
     alert("박스 한개 삭제 ")
-    container.removeChild(document.querySelector('.box'));
   })
 
 
