@@ -7,9 +7,6 @@ class Counter {
 
 }
 
-let test = Counter.createCounter('test');
-console.log(test);
-
 const counter1 = new Counter(-100);
 
 const counter = new Counter(5);
@@ -23,5 +20,3 @@ console.log(counter.value);
 counter.value = -100;
 console.log(counter.value);
 
-
-console.log(Object.getOwnPropertyDescriptors(counter));
