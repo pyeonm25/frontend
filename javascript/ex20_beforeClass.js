@@ -56,10 +56,18 @@ let dog = new Pet('개', '바둑이', 5);
 let hamster = new Pet('햄스터', '모찌', 0.2);
 
 function printAllPets() {
+  this.name = "익명";
+  this.printTest = () => { console.log("test") };
+
   let pets = [cat, dog, hamster];
   pets.forEach(pet => console.log(pet));
+
+  //this.printTest();
+
 }
 
 printAllPets();
 
+// let test = new printAllPets();
 
+// test.printTest();
