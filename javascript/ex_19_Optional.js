@@ -47,6 +47,25 @@ console.log(printKey());
 console.log(printKey(cat, 'age'));
 
 // 객체에서 요소 한개 삭제하는 메서드 만들기 
-function removeKey() {
-
+function removeKey(obj, key) {
+  obj?.[key] ? delete obj[key] : console.log("키가 존재하지않음");
+  return obj;
 }
+
+console.log(removeKey(cat));
+console.log(removeKey(cat, 'age'));
+
+// ES11  nullish coalesing operater ??
+
+// null , unfined 만 false 나머지는 다 true;
+
+let num = 0;
+console.log(num || -1);
+console.log(num && -1);
+console.log("----------------");
+console.log(num ?? -1);
+console.log(null || -1);
+console.log(null ?? -1);
+console.log('' || 1);
+console.log('' ?? 1);
+console.log("----------------");
