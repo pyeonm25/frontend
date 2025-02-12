@@ -20,3 +20,10 @@ let hamster = new Pet('햄스터', '모찌', 0.2);
 console.log(cat);
 console.log(dog);
 console.log(hamster);
+
+// let test = () => {
+//   this.name1 = "무명이";
+//   this.age = 10;
+// }
+
+// let test2 = new test();
