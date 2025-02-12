@@ -74,5 +74,4 @@ pets.forEach(obj => {
   // console.log("test");
 })
 
-console.log(res);
 console.log(cnt);
