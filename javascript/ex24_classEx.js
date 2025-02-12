@@ -4,6 +4,25 @@
 // 음수 들어오면 기본값 0으로 변경
 
 class Counter {
+  #value;
+  constructor(start) {
+    if (isNaN(start) || start < 0) {
+      console.log('올바르지 않은 값 범위 입력 > 0 이상 값 입력');
+      this.#value = 0;
+    } else {
+      this.#value = start;
+    }
+  }
+  get value() {
+    return this.#value;
+  }
+  set value(value) {
+    this.#value = value < 0 ? 0 : value;
+  }
+
+  increase() {
+    this.#value += 1;
+  }
 
 }
 
