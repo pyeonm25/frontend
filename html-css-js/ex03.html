@@ -11,13 +11,16 @@
       height: 150px;
       background-color: yellow;
       margin-bottom: 10px;
-      /* transition: 1s; */
+      transition: 1s;
     }
 
     /* 
     .box:hover {
       transform: translateX(200px);
     } */
+    .big {
+      transform: scale(1.3);
+    }
 
     .msg {
       border: 1px solid blue;
@@ -27,6 +30,10 @@
       line-height: 100px;
       text-align: center;
       margin: 10px;
+    }
+
+    .rotate {
+      transform: rotate(360deg);
     }
   </style>
 </head>
@@ -50,20 +57,44 @@
 
   box.addEventListener("mouseover", () => {
     box.style.transform = 'translateX(200px)';
-    box.style.transition = '1s';
+    // box.style.transition = '1s';
     msg.innerHTML = '네모 돌아와'
   });
 
   box.addEventListener("mouseout", () => {
     box.style.transform = 'translateX(0px)';
-    box.style.transition = '1s';
+    // box.style.transition = '1s';
     msg.innerHTML = '네모 움직여'
 
   });
 
   let btn1Toggle = false;
 
-  btn1Toggle ? makeBigBox() : makeSmallBox();
-  function makeBigBox() { }
-  function makeSmallBox() { }
+
+  function makeBigBox() {
+    // box.style.transform = 'scale(1.3)';
+    // // box.style.transition = '1s';
+    // msg.innerHTML = '네모 커졌다';
+  }
+  function makeSmallBox() {
+    // box.style.transform = 'scale(1)';
+    // // box.style.transition = '1s';
+    // msg.innerHTML = '네모 작아졌다';
+  }
+
+  btnGrow.addEventListener("click", () => {
+
+    //btn1Toggle ? makeSmallBox() : makeBigBox();
+    box.classList.toggle('big');
+    btnGrow.innerHTML = btn1Toggle ? "네모키우기" : "네모줄이기";
+    //console.log(btn1Toggle)
+    btn1Toggle = !btn1Toggle;
+  })
+
+  btnRotate.addEventListener("click", () => {
+    box.classList.toggle("rotate");
+    msg.innerHTML = '네모 회전했다';
+  })
+
+
 </script>
