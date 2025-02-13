@@ -46,6 +46,7 @@
 <script>
   const div = document.querySelectorAll("div");
   div.forEach(d => d.addEventListener("click", (e) => {
+    e.stopPropagation(); // 이벤트 전파 방지 
     console.log(e.currentTarget);
   }));
 </script>
