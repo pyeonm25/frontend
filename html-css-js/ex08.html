@@ -5,6 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>산술문제</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .question {
+      font-size: 1.5em;
+      margin: 10px;
+    }
+
+    .question span {}
+
+    .wrong {
+      color: red;
+      text-decoration: line-through;
+    }
+
+    .question input {
+      width: 80px;
+      height: 50px;
+      font-size: 1.1em;
+    }
+
+    .answer {
+      margin-top: 10px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 20px;
+      background-color: royalblue;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: gold;
+      color: #222;
+    }
+
+    .answer span {
+      font-size: 28px;
+      padding: 0 30px;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,7 +74,7 @@
     </div>
 
   </div>
-  <div class="btns">
+  <div class="answer">
     <button> 체점</button>
     <span id="score"> 0 점</span>
     <button> 다시</button>
@@ -35,9 +84,27 @@
 </html>
 
 <script>
-  const answerArr = [0, 0, 0, 0];
+  //const answerArr = [0, 0, 0, 0];
+  const answerArr = [6, 6, 6, 6];
+  const btns = document.querySelectorAll('button');
 
+  btns[0].addEventListener("click", () => {
+    const quizArr = document.querySelectorAll('.question span ');
+    const inputArr = document.querySelectorAll('input');
+    let score = 0;
+    let idx = 0;
+    inputArr.forEach(input => {
+      if (input.value == answerArr[idx]) {
+        score += 1;
+        quizArr[idx].classList.remove('wrong');
+      } else {
+        quizArr[idx].classList.add('wrong');
+      }
+      idx += 1;
+    })
 
+    document.querySelector('.answer span').innerHTML = `${score}점`;
+  })
   function makeQuiz() {
     // 문제 4개를 만들어주는 공간 
 
