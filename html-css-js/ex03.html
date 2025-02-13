@@ -11,7 +11,13 @@
       height: 150px;
       background-color: yellow;
       margin-bottom: 10px;
+      /* transition: 1s; */
     }
+
+    /* 
+    .box:hover {
+      transform: translateX(200px);
+    } */
 
     .msg {
       border: 1px solid blue;
@@ -35,3 +41,29 @@
 </body>
 
 </html>
+
+<script>
+  const box = document.querySelector('.box');
+  const msg = document.querySelector('.msg');
+  const btnGrow = document.querySelectorAll('button')[0];
+  const btnRotate = document.querySelectorAll('button')[1];
+
+  box.addEventListener("mouseover", () => {
+    box.style.transform = 'translateX(200px)';
+    box.style.transition = '1s';
+    msg.innerHTML = '네모 돌아와'
+  });
+
+  box.addEventListener("mouseout", () => {
+    box.style.transform = 'translateX(0px)';
+    box.style.transition = '1s';
+    msg.innerHTML = '네모 움직여'
+
+  });
+
+  let btn1Toggle = false;
+
+  btn1Toggle ? makeBigBox() : makeSmallBox();
+  function makeBigBox() { }
+  function makeSmallBox() { }
+</script>
