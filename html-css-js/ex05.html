@@ -25,7 +25,7 @@
       margin: 10px;
     }
 
-    .selected {
+    div.selected {
       background-color: crimson;
     }
   </style>
@@ -35,7 +35,7 @@
   <h5> 이벤트 연습 </h5>
   <input type="checkbox"> 체크박스
   <div class="container">
-    <div></div>
+    <div class="selected"></div>
     <div></div>
     <div></div>
     <div></div>
@@ -51,3 +51,22 @@
 </body>
 
 </html>
+
+<script>
+  document.querySelector('.container').addEventListener("click", (e) => {
+    if (e.currentTarget != e.target)
+      e.target.classList.add('selected');
+  })
+
+  const chkbox = document.querySelector('input[type="checkbox"]');
+  chkbox.addEventListener("click", (e) => {
+    alert("클릭했다");
+    e.preventDefault(); // 이미 있는 기본 이벤트값을 막는다 
+  })
+
+  document.addEventListener('wheel', e => {
+    e.preventDefault();
+    console.log("스크롤중......");
+  })
+
+</script>
