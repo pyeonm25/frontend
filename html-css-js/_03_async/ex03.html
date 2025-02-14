@@ -15,5 +15,11 @@
 </html>
 
 <script>
+  let cnt = 0;
+  const time = setInterval(() => {
+    document.querySelector('h1').innerHTML = ++cnt;
+  }, 1000);
+
+  document.querySelector('button').addEventListener('click', () => clearInterval(time));
 
 </script>
