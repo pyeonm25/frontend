@@ -52,3 +52,24 @@ $input.addEventListener("keydown", (e) => {
   }
 })
 
+// 아이템 삭제부분 
+
+function deleteItem(id) {
+  const delItem = document.querySelector(`.item_row[data-id='${id}']`);
+  delItem.remove();
+}
+
+$items.addEventListener('click', e => {
+  let id = e.target.getAttribute('data-id');
+  if (!id) {
+    id = e.target.parentElement.getAttribute('data-id');
+    // console.log(id);
+    // console.log("test1= ", e.target);
+    // console.log("test2= ", e.target.parentElement);
+    // 아이템을 선택했을때는 제거가 되지 않도록 설정 
+    if (e.target.parentElement.classList.value === 'item_row') return;
+  }
+
+  id && deleteItem(id);
+
+})
