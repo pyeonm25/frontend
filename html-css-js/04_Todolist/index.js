@@ -19,11 +19,12 @@ function checkInputValue() {
     $input.focus(); // 키보드 입력창이 활성화 
     return;
   }
-  // items -> ul 태그 객체 안에 아이템 한개 추가 
-  addItemToItems($input.value);
+
   $input.value = '';
   $input.focus();
+  id += 1;
 
+  return value;
 }
 
 function addItemToItems(value) {
@@ -37,10 +38,17 @@ function addItemToItems(value) {
   $items.innerHTML += data;
 }
 
-$addBtn.addEventListener('click', checkInputValue);
+$addBtn.addEventListener('click', () => {
+  let value = checkInputValue();
+  value && addItemToItems(value);
+});
 $input.addEventListener("keydown", (e) => {
   // console.log(e);
   // 키보드에서 한글를 입력받았을때 이벤트 중복처리 방지 
   if (e.isComposing) return;
-  if (e.code === 'Enter') checkInputValue();
+  if (e.code === 'Enter') {
+    let value = checkInputValue();
+    value && addItemToItems(value);
+  }
 })
+
