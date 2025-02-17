@@ -44,7 +44,7 @@
       border-radius: 3px;
     }
 
-    #content {
+    .container {
       border: 1px solid #ddd;
       border-radius: 10px;
       padding: 20px 40px;
@@ -53,7 +53,7 @@
 
     }
 
-    #box>ul {
+    #box ul {
       border: 1px solid #ddd;
       border-radius: 5px;
       padding: 8px 12px;
@@ -74,14 +74,14 @@
       display: flex;
     }
 
-    .input-group>input {
+    .input-group input {
       border: 1px solid #2d95eb;
       outline: none;
       border-right: none;
       border-radius: 5px 0 0 5px;
     }
 
-    .input-group>button {
+    .input-group button {
       border: 1px solid #2d95eb;
       background-color: #fff;
       outline: none;
@@ -103,26 +103,28 @@
 
 <body>
   <div class="container">
-    <div class="innput-group">
+    <div class="input-group">
       <input type="text" id="username">
       <button id="btn-add"> ADD</button>
     </div>
+
     <div class="btn-group">
       <button id="btn-start">시작</button>
       <button id="btn-stop">정지</button>
     </div>
-
-    <div id="box">
-      <ul id="user-list">
-        <li class="item">박연미</li>
-        <li class="item on">둘리</li>
-
-      </ul>
-      <ul id="selected-list">
-        <li class="item fix"> 홍길동</li>
-      </ul>
-    </div>
   </div>
+
+  <div id="box">
+    <ul id="user-list">
+      <li class="item">박연미</li>
+      <li class="item on">둘리</li>
+    </ul>
+
+    <ul id="selected-list">
+      <li class="item fix"> 홍길동</li>
+    </ul>
+  </div>
+
 
 </body>
 
