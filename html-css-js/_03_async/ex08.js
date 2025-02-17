@@ -68,14 +68,34 @@ document.querySelector('#btn-start').addEventListener('click', () => {
 
 let timeout = null;
 
-function stopTimeOut(time) {
-  clearTimeout(timeout);
-  timeout = setTimeout(() => {
+// [1단계 ] - 즉시 멈추기
+// function stopTimeOut(time) {
+// clearTimeout(timeout);
+// timeout = setTimeout(() => {
 
+//   liList[idx].classList.remove('on');
+//   liList[idx].classList.add('fix');
+//   $selectedList.appendChild(liList[idx]); // $selectedList 값추가  , $userList 값 삭제 
+//   liList.splice(idx, 1);
+// }, time);
+// }
+
+//[2 단계] 천천히 멈추기 
+function stopTimeOut(time) {
+  // 재귀함수는 반드시 나가는 조건이 있어야한다 
+  if (tiem >= 1000) {
     liList[idx].classList.remove('on');
     liList[idx].classList.add('fix');
     $selectedList.appendChild(liList[idx]); // $selectedList 값추가  , $userList 값 삭제 
     liList.splice(idx, 1);
+    return;
+  }
+
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    move();
+    // 재규함수 => 자신의 함수를 함수 내부에서 실행하는 것! 
+    stopTimeOut(time + 100);
   }, time);
 }
 //[3] 정지버튼을 누르면 on 삭제 fix 붙이기 , user-list있는 li 태그
