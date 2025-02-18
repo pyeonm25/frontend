@@ -18,9 +18,17 @@
   //let name;
   document.write(`<h1>${name}</h1>`);
   // key => return : value
-  let cat = localStorage.getItem('cat');
-  document.write(`<h1>${cat}</h1>`);
-  let dog = sessionStorage.getItem('dog');
-  document.write(`<h1>${dog}</h1>`);
+  let catData = localStorage.getItem('cat');
+  document.write(`<h1>${catData}</h1>`);
+  let dogData = sessionStorage.getItem('dog');
+  document.write(`<h1>${dogData}</h1>`);
+
+  console.log(catData);
+  console.log(dogData);
+
+  let cat = JSON.parse(catData);
+  let dog = JSON.parse(dogData);
+  console.log(cat);
+  console.log(dog);
 
 </script>

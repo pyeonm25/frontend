@@ -1,7 +1,7 @@
 const cat = {
   name: '나비',
   age: 4,
-  play: () => { console.log('낚시줄 놀이') },
+  play: () => { console.log('낚시줄 놀이') }, // 함수값은 json으로 전송불가능
   owner: { name: '박연미' },
   favorite: ['캣잎', '잠자기', '츄르']
 }
