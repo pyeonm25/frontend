@@ -1,5 +1,6 @@
 class App {
   constructor() {
+    // 필드 = 클래스의 멤버변수 
     this.listDom = document.querySelector('#list');
     this.inputTitle = document.querySelector('#title');
     this.inputContent = document.querySelector('#content');
@@ -12,7 +13,10 @@ class App {
     this.init();
 
   }
-  // 초기화 
+
+  // 메서드 : 객체를 생성하고 객체. 접근하는 함수 
+  // 초기화
+  //일반함수  
   init() {
     this.listDom.innerHTML = '';
     this.addBtn.addEventListener('click', this.addTodo);
@@ -27,6 +31,7 @@ class App {
     });
     this.getTodo();
   }
+  // 화살표함수 
   // 값추가 
   addTodo = () => {
     const title = this.inputTitle.value;
