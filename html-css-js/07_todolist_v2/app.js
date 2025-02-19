@@ -12,7 +12,7 @@ class App {
     this.init();
 
   }
-
+  // 초기화 
   init() {
     this.listDom.innerHTML = '';
     this.addBtn.addEventListener('click', this.addTodo);
@@ -76,11 +76,12 @@ class App {
     return div;
   }
 
+  // 삭제하기 
   deleteTodo = (e) => {
     const idx = e.dataTransfer.getData('idx');
-    console.log("idx=" + idx);
+    //console.log("idx=" + idx);
     const todo = this.todoList.find(obj => obj.idx == idx);
-    console.log("todo=" + todo);
+    // console.log("todo=" + todo);
     const itemList = [...document.querySelectorAll('.item')];
     const delItem = itemList.find(item => item.dataset.idx == idx);
     //console.log(delItem);
@@ -95,8 +96,10 @@ class App {
 
   }
 
+  // 로컬 스토리지 저장 
   saveStorage() {
-    localStorage.setItem('todo_list', JSON.stringify(this.todoList));
+    // localStorage.setItem('todo_list', JSON.stringify(this.todoList));
+    this.todoList.length === 0 ? localStorage.removeItem('todo_list') : localStorage.setItem('todo_list', JSON.stringify(this.todoList));
   }
 
   showToast(msg) {
