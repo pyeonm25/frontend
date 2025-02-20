@@ -25,7 +25,7 @@
   fetch(
     'https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0'
   ).then((response) => {
-    if (!response.ok) {
+    if (!response.ok) {  // 코드 200 : 성공 
       throw new Error('데이터 요청 실패 에러 ');
     }
     return response.json();

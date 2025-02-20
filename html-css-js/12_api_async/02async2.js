@@ -4,7 +4,7 @@ function getCat() {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve({ kind: '고양이', name: '나비' });
-		}, 300);
+		}, 3000);
 	});
 }
 
